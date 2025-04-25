@@ -29,8 +29,6 @@ python3 "$wwise_root/Scripts/Build/Plugins/wp.py" build -c Release -x x86_64 Mac
 
 python3 "$wwise_root/Scripts/Build/Plugins/wp.py" package --version "$version" Mac
 
-python3 "$wwise_root/Scripts/Build/Plugins/wp.py" generate-bundle --version "$version"
-
 mkdir -p Bundle
 cp -f bundle.json Bundle/
 cp -f *.tar.xz Bundle/
